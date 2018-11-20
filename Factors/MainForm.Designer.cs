@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.txtNumber = new System.Windows.Forms.TextBox();
-            this.btnFactors = new System.Windows.Forms.Button();
+            this.btnDivisors = new System.Windows.Forms.Button();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -43,16 +44,16 @@
             this.txtNumber.Size = new System.Drawing.Size(825, 48);
             this.txtNumber.TabIndex = 0;
             // 
-            // btnFactors
+            // btnDivisors
             // 
-            this.btnFactors.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFactors.Location = new System.Drawing.Point(844, 12);
-            this.btnFactors.Name = "btnFactors";
-            this.btnFactors.Size = new System.Drawing.Size(275, 48);
-            this.btnFactors.TabIndex = 1;
-            this.btnFactors.Text = "Factors";
-            this.btnFactors.UseVisualStyleBackColor = true;
-            this.btnFactors.Click += new System.EventHandler(this.btnFactors_Click);
+            this.btnDivisors.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDivisors.Location = new System.Drawing.Point(844, 12);
+            this.btnDivisors.Name = "btnDivisors";
+            this.btnDivisors.Size = new System.Drawing.Size(275, 48);
+            this.btnDivisors.TabIndex = 1;
+            this.btnDivisors.Text = "Find Divisors";
+            this.btnDivisors.UseVisualStyleBackColor = true;
+            this.btnDivisors.Click += new System.EventHandler(this.btnDivisors_Click);
             // 
             // txtOutput
             // 
@@ -73,8 +74,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1131, 906);
             this.Controls.Add(this.txtOutput);
-            this.Controls.Add(this.btnFactors);
+            this.Controls.Add(this.btnDivisors);
             this.Controls.Add(this.txtNumber);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Factors";
             this.ResumeLayout(false);
@@ -85,7 +87,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtNumber;
-        private System.Windows.Forms.Button btnFactors;
+        private System.Windows.Forms.Button btnDivisors;
         private System.Windows.Forms.TextBox txtOutput;
     }
 }
