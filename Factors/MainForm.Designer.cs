@@ -78,6 +78,7 @@
             this.Controls.Add(this.txtNumber);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factors";
             this.ResumeLayout(false);
             this.PerformLayout();
